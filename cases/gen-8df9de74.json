@@ -1,0 +1,131 @@
+{
+  "id": "gen-8df9de74",
+  "difficulty": "hard",
+  "title": "The Last Note of Nuit d'Ambre",
+  "setting": "Maison Marchetti, a perfume house in Grasse, France, during the harvest ball of September 1925.",
+  "victim": "Lucien Marchetti, the house owner, was found on the floor of the blending laboratory at 9:45 pm, killed by a blow to the head from a heavy brass pestle.",
+  "briefing": "Lucien died between 9:00 and 9:30 pm, before the fireworks. Only three people from the house were out of sight of the guests: Odile Ferrant, Bastien Roux and Clémence Vidal.",
+  "suspects": [
+    {
+      "id": "odile",
+      "name": "Odile Ferrant",
+      "role": "Head perfumer of the house",
+      "publicStatement": "I was alone in the jasmine greenhouse from nine o'clock until the fireworks, tending the night-blooming flowers.",
+      "persona": "Calm, composed and precise. She answers slowly, never raises her voice and meets your eyes.",
+      "secret": "She keeps a hidden bottle of cognac in her laboratory cupboard and drinks it while working.",
+      "alibi": "In the jasmine greenhouse from 9:00 to 9:30, alone.",
+      "knows": [
+        "I, Odile Ferrant, killed Lucien in the blending laboratory at about 9:10 pm with the brass pestle.",
+        "I created the scent Nuit d'Ambre over a year of night work, and Lucien told me he would launch it under his name alone, so I killed him.",
+        "I took the laboratory key from the hook by the storeroom at 8:55 and left the greenhouse empty while I did it.",
+        "I washed my hands, hid the pestle among the planters, and was back in the greenhouse by 9:20.",
+        "I fear someone noticed the key missing from its hook, but nobody saw the killing."
+      ],
+      "claimedLocationId": "greenhouse"
+    },
+    {
+      "id": "bastien",
+      "name": "Bastien Roux",
+      "role": "Bottling foreman",
+      "publicStatement": "I was counting crates in the bottling storeroom from a quarter to nine until the fireworks.",
+      "persona": "Gruff and defensive, he mutters and avoids questions about money.",
+      "secret": "He lost 4,000 francs at cards and owed it to Lucien, and he has told nobody.",
+      "alibi": "In the bottling storeroom counting crates from 8:45 to 9:30.",
+      "knows": [
+        "At 8:55 I saw Odile Ferrant take the laboratory key from the hook by my door, saying Lucien wanted to see her there at nine.",
+        "Lucien had me print the labels for the Nuit d'Ambre scent with only 'Marchetti' on them and no perfumer's credit.",
+        "Lucien tore up my IOU at five that afternoon, so my gambling debt was wiped clean, and he lent money to nobody else.",
+        "I stayed in the storeroom the whole time, and Clémence Vidal came by at 9:35 to tell me about the body."
+      ],
+      "claimedLocationId": "storeroom"
+    },
+    {
+      "id": "clemence",
+      "name": "Clémence Vidal",
+      "role": "Lucien's secretary",
+      "publicStatement": "I was in the ballroom all evening, except for a short walk to the greenhouse at ten past nine to fetch Odile for the toast.",
+      "persona": "Polite and anxious, she twists her gloves and over-explains.",
+      "secret": "She has been secretly reading Lucien's private letters in the office for months.",
+      "alibi": "In the ballroom, apart from a short trip to the greenhouse at 9:10.",
+      "knows": [
+        "At 9:10 I went to the jasmine greenhouse to fetch Odile Ferrant for the toast, and it was dark and empty.",
+        "Odile Ferrant spent a whole year working nights to create the new scent Nuit d'Ambre.",
+        "I typed Lucien's will: the house goes to his nephew in Lyon and the staff get only small pensions, so nobody here inherits it.",
+        "Lucien had just raised everyone's wages for the ball and planned to dismiss nobody."
+      ],
+      "claimedLocationId": "ballroom"
+    }
+  ],
+  "map": {
+    "locations": [
+      {
+        "id": "ballroom",
+        "name": "Grand ballroom",
+        "x": 50,
+        "y": 75
+      },
+      {
+        "id": "terrace",
+        "name": "Garden terrace",
+        "x": 20,
+        "y": 78
+      },
+      {
+        "id": "lab",
+        "name": "Blending laboratory",
+        "x": 80,
+        "y": 28
+      },
+      {
+        "id": "greenhouse",
+        "name": "Jasmine greenhouse",
+        "x": 20,
+        "y": 25
+      },
+      {
+        "id": "storeroom",
+        "name": "Bottling storeroom",
+        "x": 80,
+        "y": 60
+      },
+      {
+        "id": "office",
+        "name": "Director's office",
+        "x": 50,
+        "y": 30
+      }
+    ],
+    "victimLocationId": "lab"
+  },
+  "motives": [
+    {
+      "id": "credit",
+      "label": "Fury at him taking credit for a new scent"
+    },
+    {
+      "id": "debt",
+      "label": "Escaping a gambling debt to the victim"
+    },
+    {
+      "id": "inherit",
+      "label": "Inheriting the perfume house"
+    },
+    {
+      "id": "dismissal",
+      "label": "Revenge for being dismissed"
+    }
+  ],
+  "clues": [
+    "The laboratory key was missing from its hook at 8:55 and was found back on it later.",
+    "The greenhouse was dark and empty at 9:10, though Odile claims to have been there from nine.",
+    "Nuit d'Ambre labels were printed with only Lucien's name, though Odile created the scent.",
+    "Lucien tore up Bastien's IOU that afternoon, so the debt motive is gone.",
+    "The will leaves the house to a nephew in Lyon, and nobody was due to be dismissed."
+  ],
+  "solution": {
+    "killerId": "odile",
+    "motiveId": "credit",
+    "motiveKeyword": "scent",
+    "explanation": "Bastien saw Odile take the laboratory key at 8:55, and Clémence found the greenhouse empty at 9:10, so her alibi is false. Clémence says Odile created the scent Nuit d'Ambre, and Bastien says the scent labels carried only Lucien's name, so the motive was stolen credit. The debt, the will and the dismissals are all ruled out."
+  }
+}

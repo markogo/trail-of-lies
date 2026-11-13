@@ -1,0 +1,33 @@
+{
+  "name": "trail-of-lies",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "TrAIl of Lies: a murder mystery where every suspect is played by Claude",
+  "scripts": {
+    "dev": "vite",
+    "typecheck": "tsc --noEmit && tsc --noEmit -p tsconfig.tests.json",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "test": "vitest run",
+    "generate": "tsx scripts/generate-case.ts",
+    "validate": "tsx scripts/validate-cases.ts",
+    "eval:leak": "tsx evals/leak.ts",
+    "eval:solve": "tsx evals/solve.ts",
+    "check": "npm run typecheck && npm run lint && npm test && npm run validate"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.6.6",
+    "eslint": "^10.14.0",
+    "prettier": "^3.9.10",
+    "tsx": "^4.23.15",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.1",
+    "vite": "^8.3.6",
+    "vitest": "^5.1.0"
+  },
+  "dependencies": {
+    "zod": "^4.6.7"
+  }
+}

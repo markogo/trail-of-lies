@@ -1,0 +1,127 @@
+{
+  "difficulty": "medium",
+  "id": "lighthouse",
+  "title": "Death at Gull Rock Lighthouse",
+  "setting": "Gull Rock Lighthouse, a remote island station cut off by a storm on the night of 14 November.",
+  "victim": "Harold Voss, the lighthouse keeper, found dead at the foot of the lamp-room stairs at 06:00 with a head wound.",
+  "briefing": "Harold Voss was killed between 23:00 and 01:00 while the storm kept everyone on the island. The lamp went dark at about 23:40 and was relit at 00:15. Three people were on the rock that night. One of them killed him.",
+  "suspects": [
+    {
+      "id": "mara",
+      "name": "Mara Quill",
+      "role": "Supply boat captain",
+      "publicStatement": "I was sheltering in my boat at the jetty all night. I never went near the tower.",
+      "persona": "Blunt, weathered woman in her fifties who answers questions with questions when nervous. Speaks in short sentences.",
+      "secret": "She has been smuggling untaxed brandy to the island for years and Harold had never reported it.",
+      "alibi": "Claims she stayed in her boat's cabin at the jetty from 22:00 until dawn, alone.",
+      "knows": [
+        "At about 00:25 she saw Edwin Pike walking from the tower toward the oil store, carrying a lantern, which she found odd in the storm.",
+        "She heard Harold shout angrily at someone near the tower door a little before the lamp went dark.",
+        "Edwin told her at supper that he never goes out after dark because of his bad knee.",
+        "Harold asked her to carry a letter to the mainland about fraud in the station's fuel accounts."
+      ],
+      "claimedLocationId": "jetty"
+    },
+    {
+      "id": "edwin",
+      "name": "Edwin Pike",
+      "role": "Assistant keeper",
+      "publicStatement": "I turned in at ten with a bad knee and slept through it all. I heard nothing.",
+      "persona": "Polite, precise, slightly pompous man in his forties who speaks formally and never raises his voice.",
+      "secret": "Harold was about to expose that Edwin falsified the logbook and fuel records and sold the spare oil on the mainland.",
+      "alibi": "Claims he went to bed at 22:00 in the keepers' quarters and did not wake until the alarm at 06:00.",
+      "knows": [
+        "He is the killer: he struck Harold with the brass lamp key after Harold confronted him about the fuel records, then relit the lamp at 00:15.",
+        "His boots and oilskin were wet and muddy when he washed up, and he hid the brass lamp key in the oil store.",
+        "He knows Harold told him that evening he would report the fuel thefts to the Lighthouse Board on the next boat."
+      ],
+      "claimedLocationId": "quarters"
+    },
+    {
+      "id": "tess",
+      "name": "Tess Harrow",
+      "role": "Cook and housekeeper",
+      "publicStatement": "I cleaned the kitchen, went to my room at eleven and stayed there. Poor Harold.",
+      "persona": "Warm, chatty woman in her sixties who rambles and calls everyone dear.",
+      "secret": "She has been secretly reading Harold's private letters from his estranged daughter because she was worried about him.",
+      "alibi": "Says she was in her room off the kitchen from 23:00, awake with a toothache, until the morning.",
+      "knows": [
+        "From her window at about 23:15 she saw Edwin Pike crossing the yard toward the tower in his oilskin, with a lantern.",
+        "At about 00:20 she saw the lamp burning again and a man's shape come back from the tower; the lamp had been dark before that.",
+        "Edwin has been strangely cheerful about the fuel deliveries and nervous whenever Harold mentioned the logbook.",
+        "Harold told her that week he had found fraud in the fuel logbook and meant to report it."
+      ],
+      "claimedLocationId": "tess-room"
+    }
+  ],
+  "motives": [
+    {
+      "id": "cover-up",
+      "label": "To stop Harold exposing his fraud"
+    },
+    {
+      "id": "smuggling",
+      "label": "To protect a smuggling operation"
+    },
+    {
+      "id": "inheritance",
+      "label": "To get Harold's inheritance"
+    },
+    {
+      "id": "jealousy",
+      "label": "Jealousy over a love affair"
+    }
+  ],
+  "clues": [
+    "Mud and wet oilskin fibres on the lamp-room stairs.",
+    "The brass lamp key, with traces of blood, hidden in the oil store.",
+    "The fuel ledger has pages torn out in Edwin's handwriting style."
+  ],
+  "solution": {
+    "killerId": "edwin",
+    "motiveId": "cover-up",
+    "motiveKeyword": "fraud",
+    "explanation": "Edwin Pike falsified the fuel records and sold spare oil. Harold meant to report him, so Edwin killed him with the brass lamp key, relit the lamp at 00:15 and hid the key in the oil store. Mara and Tess both saw him outside with a lantern, contradicting his claim of sleeping all night."
+  },
+  "map": {
+    "locations": [
+      {
+        "id": "jetty",
+        "name": "Boat at the jetty",
+        "x": 14,
+        "y": 84
+      },
+      {
+        "id": "quarters",
+        "name": "Keepers' quarters",
+        "x": 72,
+        "y": 66
+      },
+      {
+        "id": "kitchen",
+        "name": "Kitchen",
+        "x": 30,
+        "y": 52
+      },
+      {
+        "id": "tess-room",
+        "name": "Room off the kitchen",
+        "x": 18,
+        "y": 40
+      },
+      {
+        "id": "stairs",
+        "name": "Lamp-room stairs",
+        "x": 50,
+        "y": 20
+      },
+      {
+        "id": "oil",
+        "name": "Oil store",
+        "x": 84,
+        "y": 32
+      }
+    ],
+    "victimLocationId": "stairs"
+  }
+}

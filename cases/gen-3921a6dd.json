@@ -1,0 +1,130 @@
+{
+  "id": "gen-3921a6dd",
+  "difficulty": "easy",
+  "title": "The Last Ledger at Café Brandl",
+  "setting": "Vienna, 1934. Café Brandl, a grand coffeehouse, late on a Saturday night after closing.",
+  "victim": "Anton Brandl, the café owner, was found dead in the wine cellar at 11:45 pm. He had been struck on the head with a heavy brass cake mould.",
+  "briefing": "Brandl was killed between 11:00 and 11:30 pm. Only three staff members were in the building: head waiter Felix Hartmann, pastry cook Greta Moser and pianist Otto Kern.",
+  "suspects": [
+    {
+      "id": "felix",
+      "name": "Felix Hartmann",
+      "role": "Head waiter",
+      "publicStatement": "I was tidying tables in the café room from a quarter to eleven until midnight. I never went near the cellar.",
+      "persona": "Nervous and fidgety. He tugs at his collar, talks too fast and over-explains.",
+      "secret": "He has large gambling debts from the horse races.",
+      "alibi": "Tidying tables in the café room all night.",
+      "knows": [
+        "I am the killer. I killed Anton Brandl in the wine cellar with a brass cake mould at about 11:15 pm.",
+        "Brandl had found out I was stealing from the till for months and meant to call the police on Monday. I killed him to hide the stolen takings.",
+        "I took the ledger from the office, went down to the cellar through the kitchen, and came back up pale and shaking.",
+        "I was never tidying tables. I must keep claiming I stayed in the café room."
+      ],
+      "claimedLocationId": "cafe"
+    },
+    {
+      "id": "greta",
+      "name": "Greta Moser",
+      "role": "Pastry cook",
+      "publicStatement": "I was in the kitchen baking for tomorrow until I found the body at a quarter to twelve.",
+      "persona": "Warm, practical and a little blunt. She speaks plainly and wipes her hands on her apron.",
+      "secret": "She quietly sells leftover pastries to a street vendor for pocket money.",
+      "alibi": "In the kitchen baking from 10:30 until she found the body.",
+      "knows": [
+        "I was in the kitchen all night, and the only door to the cellar stairs is in the kitchen.",
+        "Around 11:10 pm I saw Felix Hartmann walk through the kitchen with the ledger and go down to the cellar. He came back about 11:25, pale, with shaking hands and no ledger.",
+        "That afternoon Brandl told me money had been stolen from the till for months and that he knew who did it. He meant to confront his head waiter that night.",
+        "Brandl was a widower and never courted anyone. His will leaves the café to his niece in Graz and nothing to the staff."
+      ],
+      "claimedLocationId": "kitchen"
+    },
+    {
+      "id": "otto",
+      "name": "Otto Kern",
+      "role": "Pianist",
+      "publicStatement": "I played piano in the café room until about half past eleven, then went to fetch my coat.",
+      "persona": "Dreamy and polite. He rambles about music and avoids trouble.",
+      "secret": "He sometimes sips the cooking brandy from the kitchen shelf.",
+      "alibi": "At the piano in the café room until 11:30 pm.",
+      "knows": [
+        "I sat at the piano in the café room from 10:45 to 11:30 and could see every table. Felix Hartmann was not tidying anything there, and the room was empty the whole time.",
+        "At about 11:30 Felix Hartmann came out of the kitchen with trembling hands and a grey face.",
+        "Brandl told me that day that someone had stolen from the till and that the police would hear of it Monday.",
+        "Brandl scolded Felix about a spilled tray earlier, but they shook hands and made peace. Felix is engaged to a girl in Linz and has no rivalry over any woman."
+      ],
+      "claimedLocationId": "cafe"
+    }
+  ],
+  "map": {
+    "locations": [
+      {
+        "id": "cafe",
+        "name": "Main café room",
+        "x": 50,
+        "y": 50
+      },
+      {
+        "id": "kitchen",
+        "name": "Kitchen and pastry room",
+        "x": 85,
+        "y": 30
+      },
+      {
+        "id": "office",
+        "name": "Owner's office",
+        "x": 15,
+        "y": 25
+      },
+      {
+        "id": "cellar",
+        "name": "Wine cellar",
+        "x": 15,
+        "y": 80
+      },
+      {
+        "id": "yard",
+        "name": "Back courtyard",
+        "x": 85,
+        "y": 80
+      },
+      {
+        "id": "entrance",
+        "name": "Front entrance",
+        "x": 50,
+        "y": 8
+      }
+    ],
+    "victimLocationId": "cellar"
+  },
+  "motives": [
+    {
+      "id": "theft",
+      "label": "Hiding money stolen from the till"
+    },
+    {
+      "id": "inherit",
+      "label": "Inheriting the café"
+    },
+    {
+      "id": "jealous",
+      "label": "Jealousy over a love affair"
+    },
+    {
+      "id": "insult",
+      "label": "Revenge for a public insult"
+    }
+  ],
+  "clues": [
+    "Felix claims to have tidied tables in the café room, but the pianist saw no one there.",
+    "The cook saw Felix take the ledger down to the cellar at 11:10 and return pale at 11:25.",
+    "Brandl planned to call the police on Monday about money stolen from the till.",
+    "Brandl's will leaves everything to a niece in Graz, and he never courted anyone.",
+    "Brandl and Felix had made peace after the spilled tray."
+  ],
+  "solution": {
+    "killerId": "felix",
+    "motiveId": "theft",
+    "motiveKeyword": "stolen",
+    "explanation": "Felix says he was in the café room, but Otto saw no one there and Greta saw Felix take the ledger to the cellar at the time of death. Both heard that Brandl knew money was stolen from the till, so Felix killed him to hide the theft. The will, the lack of any love affair and the made-up quarrel rule out the other motives."
+  }
+}

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Interrogation</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#14161B}
+a{color:#E8A33D}a:hover{color:#F3C06E}
+</style>
+</helmet>
+<div style="min-height: 980px; background: #14161B; color: #ECE8E1; font-family: Inter, system-ui, sans-serif; box-sizing: border-box; padding: 24px 24px 40px">
+<div style="max-width: 1232px; margin: 0 auto; display: flex; flex-direction: column; gap: 24px">
+
+<header style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; border-bottom: 1px solid #2C313A; padding-bottom: 20px">
+<div style="display: flex; flex-direction: column; gap: 4px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-weight: 600; letter-spacing: 0.18em; font-size: 12px; color: #E8A33D">TrAIl of Lies · CASE 001</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 20px; font-weight: 600">Death at Gull Rock Lighthouse</div>
+</div>
+<div style="display: flex; gap: 32px; flex-wrap: wrap; align-items: center">
+<div style="display: flex; flex-direction: column; gap: 6px; min-width: 200px">
+<div style="display: flex; justify-content: space-between; font-size: 13px"><span style="color: #A3A9B3">Questions left</span><span style="font-family: 'IBM Plex Mono', monospace; font-weight: 600">14 / 20</span></div>
+<div style="height: 8px; background: #2C313A; border-radius: 4px"><div style="width: 70%; height: 8px; background: #E8A33D; border-radius: 4px"></div></div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px; min-width: 200px">
+<div style="display: flex; justify-content: space-between; font-size: 13px"><span style="color: #A3A9B3">Case token budget</span><span style="font-family: 'IBM Plex Mono', monospace; font-weight: 600">38k / 100k</span></div>
+<div style="height: 8px; background: #2C313A; border-radius: 4px"><div style="width: 38%; height: 8px; background: #6FA8DC; border-radius: 4px"></div></div>
+</div>
+</div>
+</header>
+
+<div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start">
+
+<nav aria-label="Suspects" style="flex: 1 1 220px; max-width: 260px; display: flex; flex-direction: column; gap: 8px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #A3A9B3; margin-bottom: 4px">SUSPECTS</div>
+<button type="button" aria-pressed="true" style="display: flex; gap: 12px; align-items: center; text-align: left; background: #262A33; border: 1px solid #E8A33D; border-radius: 8px; padding: 12px; color: #ECE8E1; font: inherit; cursor: pointer; min-height: 44px">
+<span style="width: 40px; height: 40px; flex: none; border-radius: 20px; background: #2C313A; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: 13px; color: #E8A33D">MV</span>
+<span style="display: flex; flex-direction: column; gap: 2px"><span style="font-weight: 600; font-size: 15px">Mara Vale</span><span style="font-size: 13px; color: #A3A9B3">4 questions asked</span></span>
+</button>
+<button type="button" aria-pressed="false" style="display: flex; gap: 12px; align-items: center; text-align: left; background: #1D2027; border: 1px solid #2C313A; border-radius: 8px; padding: 12px; color: #ECE8E1; font: inherit; cursor: pointer; min-height: 44px">
+<span style="width: 40px; height: 40px; flex: none; border-radius: 20px; background: #2C313A; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: 13px; color: #E8A33D">OL</span>
+<span style="display: flex; flex-direction: column; gap: 2px"><span style="font-weight: 600; font-size: 15px">Dr. Oskar Lind</span><span style="font-size: 13px; color: #A3A9B3">2 questions asked</span></span>
+</button>
+<button type="button" aria-pressed="false" style="display: flex; gap: 12px; align-items: center; text-align: left; background: #1D2027; border: 1px solid #2C313A; border-radius: 8px; padding: 12px; color: #ECE8E1; font: inherit; cursor: pointer; min-height: 44px">
+<span style="width: 40px; height: 40px; flex: none; border-radius: 20px; background: #2C313A; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: 13px; color: #E8A33D">TH</span>
+<span style="display: flex; flex-direction: column; gap: 2px"><span style="font-weight: 600; font-size: 15px">Tess Holloway</span><span style="font-size: 13px; color: #A3A9B3">Not questioned yet</span></span>
+</button>
+<a href="Main.dc.html" style="margin-top: 12px; font-size: 14px">Reread case file</a>
+</nav>
+
+<main style="flex: 999 1 520px; min-width: 0; background: #1D2027; border: 1px solid #2C313A; border-radius: 8px; display: flex; flex-direction: column">
+<div style="padding: 16px 24px; border-bottom: 1px solid #2C313A; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap">
+<div><span style="font-weight: 600">Interrogating Mara Vale</span><span style="color: #A3A9B3; font-size: 14px"> · assistant keeper</span></div>
+<span style="font-size: 13px; color: #A3A9B3">Mood: guarded</span>
+</div>
+<div style="padding: 24px; display: flex; flex-direction: column; gap: 16px; min-height: 520px">
+<div style="align-self: flex-end; max-width: 75%; background: #3A3222; border-radius: 12px 12px 2px 12px; padding: 12px 16px; font-size: 15px; line-height: 1.5">Where were you at 23:00?</div>
+<div style="align-self: flex-start; max-width: 75%; background: #262A33; border-radius: 12px 12px 12px 2px; padding: 12px 16px; font-size: 15px; line-height: 1.5">In the cottage, mending nets. The storm was too loud to hear anything from the tower.</div>
+<div style="align-self: flex-end; max-width: 75%; background: #3A3222; border-radius: 12px 12px 2px 12px; padding: 12px 16px; font-size: 15px; line-height: 1.5">Then why were your boots wet when the doctor found you?</div>
+<div style="align-self: flex-start; max-width: 75%; background: #262A33; border-radius: 12px 12px 12px 2px; padding: 12px 16px; font-size: 15px; line-height: 1.5">I went out to check the boat moorings. Is that a crime now?</div>
+<div style="align-self: flex-start; display: flex; gap: 8px; align-items: center; font-size: 13px; color: #A3A9B3">
+<button type="button" style="background: none; border: 1px solid #2C313A; color: #E8A33D; border-radius: 6px; padding: 8px 12px; font: inherit; font-size: 13px; cursor: pointer; min-height: 36px">Pin as clue</button>
+<span>Contradicts: "in the cottage"</span>
+</div>
+</div>
+<form style="border-top: 1px solid #2C313A; padding: 16px 24px; display: flex; gap: 12px; flex-wrap: wrap; align-items: flex-end">
+<label style="flex: 1 1 320px; display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: #A3A9B3">Your question (costs 1 of 14 left)
+<input type="text" placeholder="Ask Mara a question…" style="background: #14161B; border: 1px solid #3A404B; border-radius: 6px; color: #ECE8E1; font: inherit; font-size: 15px; padding: 12px 14px; min-height: 44px; box-sizing: border-box">
+</label>
+<button type="submit" style="background: #E8A33D; color: #14161B; border: none; border-radius: 6px; font: inherit; font-weight: 600; font-size: 15px; padding: 0 24px; min-height: 44px; cursor: pointer">Ask</button>
+</form>
+</main>
+
+<aside aria-label="Notebook" style="flex: 1 1 260px; max-width: 320px; background: #F3EEE4; color: #2A2620; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 16px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.14em; color: #6B6458">NOTEBOOK</div>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 15px; line-height: 1.45">
+<li style="border-bottom: 1px dashed #CFC6B5; padding-bottom: 12px">Lamp log stops at 23:15. Elias always logged until midnight.</li>
+<li style="border-bottom: 1px dashed #CFC6B5; padding-bottom: 12px">Mara's boots were wet, but she says she stayed in the cottage.</li>
+<li style="border-bottom: 1px dashed #CFC6B5; padding-bottom: 12px">Oskar says he was asleep by 22:30.</li>
+<li style="color: #6B6458; font-style: italic">Pin answers from the chat to add clues.</li>
+</ul>
+<a href="Accuse.dc.html" style="margin-top: 8px; background: #B3261E; color: #FFFFFF; text-decoration: none; text-align: center; font-weight: 600; font-size: 15px; padding: 12px 16px; border-radius: 6px; min-height: 44px; box-sizing: border-box; display: flex; align-items: center; justify-content: center">Make accusation</a>
+</aside>
+
+</div>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":980}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

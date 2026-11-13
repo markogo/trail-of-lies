@@ -1,0 +1,10 @@
+node_modules
+dist
+.claude/settings.local.json
+logs/*.jsonl
+evals/out/
+
+# OS files
+.DS_Store
+
+docs/presentation/

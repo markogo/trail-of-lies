@@ -1,0 +1,131 @@
+{
+  "difficulty": "medium",
+  "id": "gen-4ed0691d",
+  "title": "Death at Gull Point Lighthouse",
+  "setting": "Gull Point, a storm-cut island with a lighthouse and a keeper's cottage, on a November night in 1962.",
+  "victim": "Edmund Thorne, 70, retired shipping owner, found at the base of the lighthouse spiral stairs, struck from behind with a heavy brass signal lamp.",
+  "briefing": "A storm cut the island off at 8 pm. The doctor places the death between 9:00 and 9:30 pm, and the body was found at 9:45 pm. Only three people were on the island: Victor Hale, Lena Marsh and Oliver Thorne.",
+  "suspects": [
+    {
+      "id": "victor",
+      "name": "Victor Hale",
+      "role": "Edmund's accountant, manages the Thorne Foundation books",
+      "publicStatement": "I was in the library going over the foundation ledgers from a quarter to nine until the alarm was raised at 9:45.",
+      "persona": "Smooth, precise and polite. Answers questions with questions and never raises his voice.",
+      "secret": "For two years he has secretly diverted foundation money into a private account.",
+      "alibi": "Working alone in the library all evening.",
+      "knows": [
+        "I, Victor Hale, killed Edmund Thorne. He summoned me to the lighthouse for 9 pm and told me he had found the embezzled foundation money and would call the police on Monday.",
+        "I left the library at about 9:05, crossed the garden terrace, argued with Edmund at the base of the lighthouse and struck him with the brass signal lamp around 9:10.",
+        "I took the altered ledger from the lighthouse and ran back along the cliff path, soaked. I was back in the library by about 9:30 and I must insist I never left it."
+      ],
+      "claimedLocationId": "library"
+    },
+    {
+      "id": "lena",
+      "name": "Lena Marsh",
+      "role": "Housekeeper",
+      "publicStatement": "I was in the kitchen washing up and making tea. The storm was so loud I heard nothing until the alarm.",
+      "persona": "Nervous and talkative. Wrings her apron and over-explains.",
+      "secret": "She lied about her references to get the job, because her last employer dismissed her.",
+      "alibi": "In the kitchen all evening, washing up and making tea.",
+      "knows": [
+        "From the kitchen window I saw Victor Hale cross the garden terrace toward the lighthouse at about 9:05, without a coat, even though he says he never left the library.",
+        "At about 9:25 I saw Victor Hale come back across the terrace, soaked and pale, holding a book against his chest.",
+        "That afternoon Mr. Thorne told me he had found embezzled money missing from his foundation and would go to the police on Monday. He did not say who was responsible.",
+        "Mr. Thorne's will was signed last spring and he told me he had no wish to change it. He was a devoted widower and there was no romance with anyone in the house.",
+        "Mr. Thorne sold his shipping firm years ago on friendly terms and made a profit, so nobody has a grudge about a ruined business."
+      ],
+      "claimedLocationId": "kitchen"
+    },
+    {
+      "id": "oliver",
+      "name": "Oliver Thorne",
+      "role": "Edmund's nephew",
+      "publicStatement": "I was in the boathouse checking the moorings against the storm until I heard the alarm.",
+      "persona": "Defensive and sarcastic. Jokes when cornered.",
+      "secret": "He owes gambling debts to a loan shark and begged Edmund for money that afternoon, but was refused.",
+      "alibi": "In the boathouse securing the boat.",
+      "knows": [
+        "From the boathouse window at about 9:20 I saw Victor Hale running along the cliff path from the lighthouse, soaked, with a ledger under his arm. He says he never left the library.",
+        "Edmund told me at dinner he had discovered embezzled money in the foundation and was meeting the person responsible at the lighthouse at nine.",
+        "Edmund left his estate to a maritime museum years ago and the will was never changed, so no relative gains or loses by his death.",
+        "Edmund's old shipping firm was sold at a profit and nobody was ruined, so there is no old business feud."
+      ],
+      "claimedLocationId": "boathouse"
+    }
+  ],
+  "map": {
+    "locations": [
+      {
+        "id": "kitchen",
+        "name": "Cottage kitchen",
+        "x": 20,
+        "y": 75
+      },
+      {
+        "id": "library",
+        "name": "Cottage library",
+        "x": 45,
+        "y": 80
+      },
+      {
+        "id": "terrace",
+        "name": "Garden terrace",
+        "x": 45,
+        "y": 55
+      },
+      {
+        "id": "boathouse",
+        "name": "Boathouse",
+        "x": 12,
+        "y": 22
+      },
+      {
+        "id": "path",
+        "name": "Cliff path",
+        "x": 62,
+        "y": 38
+      },
+      {
+        "id": "tower",
+        "name": "Lighthouse base",
+        "x": 85,
+        "y": 20
+      }
+    ],
+    "victimLocationId": "tower"
+  },
+  "motives": [
+    {
+      "id": "m_money",
+      "label": "Hiding money embezzled from the foundation"
+    },
+    {
+      "id": "m_will",
+      "label": "Inheritance: a will about to be changed"
+    },
+    {
+      "id": "m_love",
+      "label": "Jealousy over a secret love affair"
+    },
+    {
+      "id": "m_revenge",
+      "label": "Revenge for a business ruined years ago"
+    }
+  ],
+  "clues": [
+    "Lena saw Victor Hale cross the terrace toward the lighthouse at about 9:05 and return at about 9:25.",
+    "Oliver saw Victor Hale running from the lighthouse at about 9:20 with a ledger under his arm.",
+    "Edmund had discovered embezzled money in the foundation and planned to call the police on Monday.",
+    "Edmund's will was unchanged and left everything to a museum.",
+    "Edmund was a devoted widower with no romantic entanglements.",
+    "Edmund's old firm was sold on friendly terms, so there was no ruined business."
+  ],
+  "solution": {
+    "killerId": "victor",
+    "motiveId": "m_money",
+    "motiveKeyword": "embezzled",
+    "explanation": "Lena and Oliver each saw Victor outside the library during the death window, which breaks his alibi. Both also know Edmund had found embezzled foundation money and meant to go to the police. Victor kept the foundation books, so he had the most to lose. The unchanged will, Edmund's widowhood and the friendly sale of his firm rule out inheritance, jealousy and revenge."
+  }
+}

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Accusation</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#14161B}
+a{color:#E8A33D}a:hover{color:#F3C06E}
+</style>
+</helmet>
+<div style="min-height: 980px; background: #14161B; color: #ECE8E1; font-family: Inter, system-ui, sans-serif; box-sizing: border-box; padding: 40px 24px 64px">
+<div style="max-width: 880px; margin: 0 auto; display: flex; flex-direction: column; gap: 32px">
+
+<header style="display: flex; flex-direction: column; gap: 8px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-weight: 600; letter-spacing: 0.18em; font-size: 12px; color: #E8A33D">TrAIl of Lies · CASE 001</div>
+<h1 style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 32px; font-weight: 600">Make your accusation</h1>
+<p style="margin: 0; font-size: 16px; color: #A3A9B3; line-height: 1.5">You get one accusation. Name the killer and the motive. Questions you didn't use count toward your score.</p>
+</header>
+
+<fieldset style="border: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px">
+<legend style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.14em; color: #A3A9B3; margin-bottom: 12px; padding: 0">1. WHO DID IT?</legend>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px">
+<label style="background: #262A33; border: 2px solid #E8A33D; border-radius: 8px; padding: 20px; display: flex; flex-direction: column; gap: 8px; cursor: pointer">
+<input type="radio" name="suspect" checked style="accent-color: #E8A33D; width: 18px; height: 18px; margin: 0">
+<span style="font-weight: 600; font-size: 17px">Mara Vale</span>
+<span style="font-size: 14px; color: #A3A9B3">Assistant keeper</span>
+</label>
+<label style="background: #1D2027; border: 1px solid #2C313A; border-radius: 8px; padding: 20px; display: flex; flex-direction: column; gap: 8px; cursor: pointer">
+<input type="radio" name="suspect" style="accent-color: #E8A33D; width: 18px; height: 18px; margin: 0">
+<span style="font-weight: 600; font-size: 17px">Dr. Oskar Lind</span>
+<span style="font-size: 14px; color: #A3A9B3">Visiting doctor</span>
+</label>
+<label style="background: #1D2027; border: 1px solid #2C313A; border-radius: 8px; padding: 20px; display: flex; flex-direction: column; gap: 8px; cursor: pointer">
+<input type="radio" name="suspect" style="accent-color: #E8A33D; width: 18px; height: 18px; margin: 0">
+<span style="font-weight: 600; font-size: 17px">Tess Holloway</span>
+<span style="font-size: 14px; color: #A3A9B3">Supply boat skipper</span>
+</label>
+</div>
+</fieldset>
+
+<fieldset style="border: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px">
+<legend style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.14em; color: #A3A9B3; margin-bottom: 12px; padding: 0">2. WHY?</legend>
+<label style="display: flex; gap: 12px; align-items: center; background: #1D2027; border: 1px solid #2C313A; border-radius: 8px; padding: 14px 16px; cursor: pointer; min-height: 44px; box-sizing: border-box"><input type="radio" name="motive" style="accent-color: #E8A33D; width: 18px; height: 18px; margin: 0">Inheritance: to take over the lighthouse sooner</label>
+<label style="display: flex; gap: 12px; align-items: center; background: #262A33; border: 2px solid #E8A33D; border-radius: 8px; padding: 14px 16px; cursor: pointer; min-height: 44px; box-sizing: border-box"><input type="radio" name="motive" checked style="accent-color: #E8A33D; width: 18px; height: 18px; margin: 0">Cover-up: Elias found out about the smuggling</label>
+<label style="display: flex; gap: 12px; align-items: center; background: #1D2027; border: 1px solid #2C313A; border-radius: 8px; padding: 14px 16px; cursor: pointer; min-height: 44px; box-sizing: border-box"><input type="radio" name="motive" style="accent-color: #E8A33D; width: 18px; height: 18px; margin: 0">Revenge: an old debt between them</label>
+<label style="display: flex; gap: 12px; align-items: center; background: #1D2027; border: 1px solid #2C313A; border-radius: 8px; padding: 14px 16px; cursor: pointer; min-height: 44px; box-sizing: border-box"><input type="radio" name="motive" style="accent-color: #E8A33D; width: 18px; height: 18px; margin: 0">Mercy: to end his suffering</label>
+</fieldset>
+
+<div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; border-top: 1px solid #2C313A; padding-top: 24px">
+<a href="Interrogation.dc.html" style="font-size: 15px">Back to questioning (14 questions left)</a>
+<a href="Verdict.dc.html" style="background: #B3261E; color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 16px; padding: 14px 28px; border-radius: 6px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Accuse Mara Vale</a>
+</div>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":980}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>
